@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Wirtualny znicz</title>
+<style>
+  body {
+    background: #111;
+    color: #eee;
+    font-family: Georgia, serif;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .plomien {
+    width: 30px;
+    height: 60px;
+    margin: 0 auto;
+    background: orange;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-shadow: 0 0 40px 15px orange;
+    animation: plomien 0.5s infinite alternate;
+  }
+
+  @keyframes plomien {
+    from { transform: scale(1, 1); }
+    to   { transform: scale(0.85, 1.15); }
+  }
+
+  .znicz {
+    width: 100px;
+    height: 120px;
+    margin: 5px auto 0;
+    background: darkred;
+    border-radius: 8px;
+  }
+
+  p {
+    margin-top: 40px;
+    font-size: 20px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Pamiętamy</h1>
+
+  <div class="plomien"></div>
+  <div class="znicz"></div>
+
+  <p>Dopóki o nich pamiętamy, żyją w naszych sercach.</p>
+
+</body>
+</html>
